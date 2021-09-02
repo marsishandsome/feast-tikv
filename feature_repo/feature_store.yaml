@@ -1,0 +1,7 @@
+project: test_custom
+registry: data/registry.db
+provider: local
+online_store:
+  type: feast_custom_online_store.tikv.TiKVOnlineStore
+  mode: rawkv
+  pd_addresses: "127.0.0.1:2379"
